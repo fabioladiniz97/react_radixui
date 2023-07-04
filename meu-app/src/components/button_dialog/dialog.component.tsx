@@ -6,7 +6,7 @@ import './styles.css';
 const DialogDemo = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
-      <button className="Button violet">Edit profile</button>
+      <button className="Button violet">Edite seu perfil</button>
     </Dialog.Trigger>
     <Dialog.Portal>
       <Dialog.Overlay className="DialogOverlay" />

@@ -1,0 +1,67 @@
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/violet.css';
+
+.AvatarRoot {
+  display: flex;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-top: 10%;
+  user-select: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: var(--black-a3);
+}
+
+.AvatarImage {
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.AvatarFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--violet-11);
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 200px;
+  overflow: hidden;
+}
+
+svg {
+  display: block;
+}
+
+
+@media (min-width: 768px) {
+  .AvatarImage
+  .AvatarRoot
+  .AvatarFallback {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .AvatarImage {
+    width: 100%;
+  }
+}
